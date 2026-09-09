@@ -9,20 +9,12 @@ const empleados = [
 
 function buscarEmpleados(id){
     return empleados.find(empleado => empleado.id === id);
-    for (let i=0;i<empleados.length;i++){
-        if (empleados[i].id===id){
-            return empleados[i];
-        }
-    }
+
 }
 
 function obtenerEmpleadosActivos(){
     return empleados.filter(empleado => empleado.activo);   
-    for (let i=0;i<empleados.length;i++){
-        if (empleados[i].activo){
-            return empleados[i];
-        }
-    }
+
 }
 
 function obtenerPorDepartamento(departamento){
